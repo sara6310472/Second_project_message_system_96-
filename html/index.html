@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../fontawesome/css/solid.css">
+    <title>project</title>
+</head>
+
+<body>
+    <main>
+    </main>
+    <template class="homePage">
+        <div id="try">
+            <button class="loginBtn" id="loginBtn" type="click">כניסה</button>
+            <button class="registrationBtn" id="registrationBtn" type="click">ליצירת חשבון</button>
+        </div>
+    </template>
+
+    <template class="registrationPage">
+        <form class="registrationForm">
+            <h1>יצירת חשבון</h1>
+            <label for="name">שם משתמש:</label><br>
+            <input class="registrationName" type="name" required placeholder="שם משתמש"><br>
+            <label for="email">כתובת מייל:</label><br>
+            <input class="registrationEmail" type="email" required placeholder="כתובת מייל"><br>
+            <label for="password">סיסמה:</label><br>
+            <input class="registrationPassword" type="password" required placeholder="סיסמה"><br>
+            <input type="checkbox" class="registrationPasswordCheckbox"><label> להצגת הסיסמה </label><br>
+            <p class="hideMassage">כתובת זו כבר קיימת במערכת בבקשה תתחבר</p>
+
+            <button class="loginBtn" type="click">להתחברות</button>
+            <button class="goToMainPage" type="submit">הבא</button>
+        </form>
+    </template>
+
+    <template class="loginPage">
+        <form class="loginForm">
+            <h1>כניסת משתמש</h1>
+            <label for="email">כתובת מייל:</label><br>
+            <input class="loginEmail" type="email" required placeholder="כתובת מייל"><br>
+            <label for="password">סיסמה:</label><br>
+            <input class="loginPassword" type="password" required placeholder="סיסמה"><br>
+            <input type="checkbox" class="loginPasswordCheckbox"><label> להצגת הסיסמה </label><br>
+            <p class="hideMassage">השם או הסיסמה אינם נכונים </p>
+            <button class="newAccount" type="click">חשבון חדש</button>
+            <button class="goToMainPage" type="submit">הבא</button>
+        </form>
+    </template>
+
+    <template class="mainPage">
+        <contact-list>
+
+        </contact-list> 
+        <!-- <div class="dropdown">
+            <button class="dropbtn">אנשי קשר</button>
+            <div class="dropdown-content">
+            </div>
+        </div> -->
+        <button class="logOutBtn" type="click">התנתקות</button>
+        <i class="fa-solid fa-volume-high" id="volume"></i>
+        <div id="part">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modalContent"></p>
+                </div>
+            </div>
+            <div class="clickDiv">
+                <div>
+                    <h1 id="h1text">דואר יוצא</h1>
+                    <div class="outgoingMail"></div>
+                </div>
+                <div class="goup">
+                    <h1 class="userName"></h1>
+                    <form class="container">
+                        <div class="massageArea">
+                            <input type="text" class="nameGetting" placeholder="נמען"><br>
+                            <textarea type="text" class="massage" placeholder="הודעה"></textarea>
+                            <button class="sendBtn" type="submit">שלח</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h1 id="h1text">דואר נכנס</h1>
+                    <div class="incomingMail"></div>
+                </div>
+            </div>
+            <div id="animation">
+                <i class="fa-solid fa-house-chimney-user" id="point1"></i>
+                <div class="animation1"><i class="fa-solid fa-person-walking-luggage" id="person"></i></div>
+                <div class="animation2"><i class="fa-solid fa-person-walking-luggage"></i></div>
+                <div class="animation3"><i class="fa-solid fa-person-walking-luggage"></i></div>
+                <i class="fa-regular fa-building" id="server"></i>
+                <i class="fa-solid fa-house-chimney-user" id="point2"></i>
+            </div> 
+        </div>
+    </template>
+
+    <script src="../js/cable.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/textScreen.js"></script>
+    <script src="../js/package.js"></script>
+    <script src="../js/server.js"></script>
+    <script src="../js/page.js"></script>
+    <script src="../js/client.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+
+</html>
